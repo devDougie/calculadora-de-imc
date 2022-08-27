@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="imc icon" href="img/imc-icon.png" height ="32" width="32" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <header class="cabecalho">
+        <h2>Teste de IMC (Índice de Massa Corporal)</h2>
+        
+        <img src="img/imc-logo.png" alt="">
+    </header>
+
+    <section class="container">
+        <h1>Calculadora</h1>
+
+        <form id="formulario">
+            <label for="peso">Peso:</label>
+            <input type="number" step="any" name="peso" id="kg" placeholder="  000,0(kg)" onchange="this.value = this.value.replace(/,/g, '.')">
+
+            <label for="altura">Altura:</label>
+            <input type="number" step="any" name="altura" id="m" placeholder="  0,00(m)" onchange="this.value = this.value.replace(/,/g, '.')">
+
+            <label for="erro" id="erro"></label>
+            <label for="imc" id="imc"></label>
+            <label for="classimc" id="classimc"></label>
+
+            <button type="submit" name="button" id="calcular" onclick="apagar()">Calcular</button>
+            <button type="reset" name="button" onclick="apagar()">Limpar</button>
+        </form>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
