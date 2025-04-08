@@ -17,6 +17,9 @@ header {
 }
 
 header img {
+    max-width: 150px;
+    flex-shrink: 0;
+
     position: absolute;
     height: 80px;
     width: 80px;
@@ -107,4 +110,67 @@ form button:hover {
     margin-top: 150px;
     text-align: center;
     position: absolute;
+}
+
+#classimc p {
+    white-space: nowrap;
+}
+
+/* Responsividade para telas menores que 768px (celulares e tablets) */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header img {
+        position: static;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    h2 {
+        font-size: 30px;
+        top: 0;
+    }
+
+    .container {
+        width: 90%;
+        height: auto;
+        left: 50%;
+        top: 50px;
+        transform: translateX(-50%);
+        padding-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+        top: 20px;
+    }
+
+    form {
+        position: static;
+        width: 90%;
+        margin: 40px auto 0 auto;
+        height: auto;
+    }
+
+    form input {
+        height: 40px;
+        font-size: 18px;
+    }
+
+    form button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .paragrafo1,
+    .paragrafo2,
+    .paragrafo3,
+    .paragrafo4 {
+        position: static;
+        margin: 20px 0;
+    }
 }

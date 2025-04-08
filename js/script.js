@@ -21,7 +21,7 @@ formulario.addEventListener('submit', function (e) {
         const calcimc = calculoIMC(peso, altura);
         const paragrafo3 = document.createElement("p");
         paragrafo3.classList.add("paragrafo3");
-        document.getElementById("imc").appendChild(paragrafo3).innerHTML = `IMC = ${(calcimc).toFixed(2)}`;
+        document.getElementById("imc").appendChild(paragrafo3).innerHTML = `<strong>IMC = </strong> ${(calcimc).toFixed(2)}`;
 
         const classimc = classificacaoIMC();
         const paragrafo4 = document.createElement("p");
@@ -39,18 +39,18 @@ function calculoIMC(a, b) {
 function classificacaoIMC() {
     let imc = calcimc;
     if (imc < 18.5) {
-        classimc = `Classificação: Abaixo do peso ideal`;
+        classimc = `<strong>Classificação: </strong> Abaixo do peso ideal`;
     } else if (imc >= 18.5 && imc <= 24.9) {
-        classimc = `Classificação: Peso ideal`;
+        classimc = `<strong>Classificação: </strong> Peso ideal`;
     } else if (imc >= 25.0 && imc <= 29.9) {
-        classimc = `Classificação: Sobrepeso`;
+        classimc = `<strong>Classificação: </strong> Sobrepeso`;
     } else if (imc >= 30.0 && imc <= 34.9) {
-        classimc = `Classificação: Obesidade grau I`;
+        classimc = `<strong>Classificação: </strong> Obesidade grau I`;
     } else if (imc >= 35.0 && imc <= 39.9) {
-        classimc = `Classificação: Obesidade grau II`;
+        classimc = `<strong>Classificação: </strong> Obesidade grau II`;
     } else {
         (imc >= 40);
-        classimc = `Classificação: Obesidade grau III`;
+        classimc = `<strong>Classificação: </strong> Obesidade grau III`;
     }
     return classimc;
 }
