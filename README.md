@@ -1,9 +1,9 @@
-<!---  --->
+<!--- ![Image](https://github.com/user-attachments/assets/848582ac-c5c3-4422-98b9-285d71520727) --->
 
 # 🧮 Calculadora de IMC
 
 <div align="center">
-  <img src="">
+  <img src="https://github.com/user-attachments/assets/848582ac-c5c3-4422-98b9-285d71520727">
 </div>
 
 ## 📋 Sobre o Projeto
