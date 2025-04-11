@@ -49,6 +49,23 @@ A ferramenta informa não apenas o valor do IMC, mas também a classificação c
 
 ---
 
+## 📂 Estrutura do Projeto:
+
+```text
+calculadora-de-imc
+├── css
+│   └── style.css
+├── img
+│   ├── imc-icon.png
+│   ├── imc-logo.png
+│   └── imc-test-background.jpg
+├── js
+│   └── script.js
+└── index.html
+```
+
+---
+
 ## 🌐 Link para Acesso
 
 Você pode testar a calculadora diretamente pelo navegador através do GitHub Pages:
